@@ -1,4 +1,4 @@
-/* Reset CSS */
+/* Reset CSS
 * {
     padding: 0px;
     margin: 0px;
@@ -14,33 +14,92 @@ html {
 #header {
     background-color: black;
     height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-#nav {}
+#nav {
+    display: inline-block;
+}
+
+#nav,
+.subnav {
+    list-style-type: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
 
 #nav li {
-    display: inline-block;
+    position: relative;
+}
+
+#nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
 }
 
 #nav li a {
-    color: #fff;
     text-decoration: none;
     line-height: 46px;
     padding: 0px 24px;
+    display: inline-block;
 }
 
-#nav li:hover a {
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover a {
     background-color: #ccc;
     color: black;
-    display: inline-block;
 }
 
 #nav .subnav {
     display: none;
+    top: 100%;
+    left: 0px;
+    min-width: 160px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-#slider {}
+#nav .subnav a {
+    color: black;
+    display: block;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .ti-search {
+    color: #fff;
+    font-size: 16px;
+    line-height: 46px;
+}
+
+#slider {
+    margin-top: 46px;
+}
 
 #content {}
 
-#footer {}
+#footer {} */
