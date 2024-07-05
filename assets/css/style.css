@@ -1,4 +1,4 @@
-/* Reset CSS
+/* Reset CSS     */
 * {
     padding: 0px;
     margin: 0px;
@@ -7,6 +7,10 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear {
+    clear: both;
 }
 
 #main {}
@@ -18,6 +22,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 #nav {
@@ -97,9 +102,81 @@ html {
 }
 
 #slider {
+    position: relative;
     margin-top: 46px;
+    padding-top: 50%;
+    background: url(/HTML-CSS/DesignBandWeb_W3/assets/img/Slider1/chicago.jpg) top center / cover no-repeat;
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
 }
 
 #content {}
 
-#footer {} */
+#content .content-section {
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+
+}
+
+#content .about-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .memebers-list {
+    margin-top: 48px;
+}
+
+#content .member-item {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+#footer {}
